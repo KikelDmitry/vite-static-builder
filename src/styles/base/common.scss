@@ -1,0 +1,11 @@
+:root {
+	--color-fg: #fff;
+	--color-bg: #000;
+}
+
+body {
+	min-height: 100vh;
+	min-height: 100dvh;
+	background-color: var(--color-bg);
+	color: var(--color-fg);
+}
