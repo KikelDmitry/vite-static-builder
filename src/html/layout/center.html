@@ -1,0 +1,11 @@
+<ul>
+  <each loop="item in data.items">
+    <li>{{item.title}}</li>
+    <button
+		type="button"
+		{{ !item.available ? 'disabled' : '' }}
+	>
+      {{item.available}}
+    </button>
+  </each>
+</ul>

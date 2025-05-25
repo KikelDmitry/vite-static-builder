@@ -34,10 +34,12 @@ export default defineConfig({
   ],
 
   css: {
+    devSourcemap: true,
     postcss: { plugins: [require("autoprefixer")] },
     preprocessorOptions: {
       scss: {
-        additionalData: `@import "@/styles/_variables.scss";`,
+        style: "expanded",
+        additionalData: `@use "@/styles/meta/_vars.scss";`,
       },
     },
   },

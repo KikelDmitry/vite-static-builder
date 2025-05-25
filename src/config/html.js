@@ -4,10 +4,12 @@ import expressions from "posthtml-expressions";
 import modules from "posthtml-modules";
 import minifyHtml from "vite-plugin-minify-html";
 import { CONFIG as config } from "./project";
+import { DATA as data } from "../data";
 
 const locals = {
   timeStamp: Date.now(),
   config,
+  data,
 };
 
 export const vitePostHtml = posthtml({
