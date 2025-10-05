@@ -1,4 +1,4 @@
-import { items } from "./some-items";
+import { items } from './some-items';
 
 export const DATA = {
   items,
